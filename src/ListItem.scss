@@ -1,0 +1,53 @@
+.listItem {
+    width: 200px;
+    height: 260px;
+    background-color: rgba(207, 240, 63, 0.4);
+    margin: 15px;
+    border-radius: 1rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 5px 5px rgba(212,185,150,.5);  
+    text-align: center; 
+    position: relative;  
+    transition: .5s; 
+    img {
+        width: 100%;
+        height: 200px;
+        // object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+        
+    }
+
+    .itemInfo {
+        display: flex;
+        flex-direction: column;
+        .icons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 3px;
+
+            .icon {
+                border-radius: 5px;
+                padding: 3px;
+                font-size: 25px;
+                font-weight: 200 !important;
+                &:hover {
+                    background-color: gray;   
+                    
+                }
+            }
+        }
+    }
+    .itemInfoTop {
+        margin-bottom: 5px;
+        font-weight: 500;
+        background-color: rgba(162, 174, 83,0.7) ;
+    }
+    &:hover {
+        // transition: 0.5s;
+        box-shadow: 1px 1px 12px 9px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 1px 12px 9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 1px 12px 9px rgba(0,0,0,0.75);
+    }
+
+}
+
